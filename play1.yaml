@@ -6,3 +6,7 @@
     yum:
       name: httpd
       state: installed
+  - name: Start Httpd
+    service:
+      name: httpd
+      state: started
