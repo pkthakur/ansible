@@ -1,0 +1,19 @@
+- name: Play1
+  hosts: all
+  become: true
+  tasks:
+  - name: Install Httpd
+    yum: 
+      name: httpd
+      state: intalled
+  
+- name: Play2
+  hosts: servera
+  become: true
+  tasks:
+  - name: Install mariadb-server
+    yum: 
+      name: mariadb-server
+      state: intalled
+
+
