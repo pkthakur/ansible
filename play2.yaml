@@ -7,6 +7,8 @@
       name: httpd
       state: intalled
   
+# Adding another play for Different Set of Hosts. 
+
 - name: Play2
   hosts: servera
   become: true
